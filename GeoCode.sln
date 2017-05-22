@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoCode", "GeoCode\GeoCode.csproj", "{31D63F23-5755-408B-B550-377872909B1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoCodeTests", "GeoCodeTests\GeoCodeTests.csproj", "{18AE9CC2-B782-4F2A-9D18-FC2943B339DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31D63F23-5755-408B-B550-377872909B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D63F23-5755-408B-B550-377872909B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D63F23-5755-408B-B550-377872909B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D63F23-5755-408B-B550-377872909B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18AE9CC2-B782-4F2A-9D18-FC2943B339DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AE9CC2-B782-4F2A-9D18-FC2943B339DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AE9CC2-B782-4F2A-9D18-FC2943B339DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AE9CC2-B782-4F2A-9D18-FC2943B339DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
