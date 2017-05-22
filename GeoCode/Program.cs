@@ -18,6 +18,7 @@ namespace GeoCode
                 {
                     // Read the stream to a string, and write the string to the console.
                     string line = sr.ReadToEnd();
+                    var areaBox = GeoCoordinateParser.ParseCoordinates($"(37.5, -122.5), (38.2, -121.6), (37.0, -121.4), (36.6, -121.3)");
                     //parse for /r/n chars
                     Console.WriteLine(line);
                 }

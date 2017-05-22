@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase\GeoCodeRetriever.cs" />
+    <Compile Include="GeoCoordinateParser.cs" />
     <Compile Include="Models\AreaBox.cs" />
     <Compile Include="Models\GeoCode.cs" />
     <Compile Include="Program.cs" />

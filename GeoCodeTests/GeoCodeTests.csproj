@@ -58,6 +58,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="GeoCodeRetrieverTests.cs" />
+    <Compile Include="GeoCoordinateParserTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
