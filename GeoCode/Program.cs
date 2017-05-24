@@ -4,9 +4,6 @@ using GeoCode.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GeoCode
 {
@@ -14,7 +11,6 @@ namespace GeoCode
     {
         static void Main(string[] args)
         {
-            //read from input file, 
             try
             {   // Open the text file using a stream reader.
                 using (StreamReader sr = new StreamReader("TestData/input.txt"))
@@ -26,17 +22,26 @@ namespace GeoCode
                     {
                         file.Add(line);
                     }
+                    //the first line of the input is a string of coordinates, we need to parse these into something usable.
+                    //In this case its a mapping of the general direction and the x,y plot.
                     Dictionary<string, Point> coordinateMap = GeoCoordinateParser.ParseCoordinatesToMap(file[0]);
+
+                    //represents the region to search in
                     var areaBox = new AreaBox(coordinateMap);
 
                     for (int i = 1; i < file.Count; i++)
                     {
                         var geoCodeRetriver = new GeoCodeRetriever();
+                        //this is the google maps api call
                         var geoCode = geoCodeRetriver.GeoCodeRetrieveAddress(file[i]);
 
+                        //similar to the coordinateMap, however only one point is given
                         var point = new Point(geoCode.results[0].geometry.location.lat, geoCode.results[0].geometry.location.lng);
-                        if(areaBox.PointExists(point))
+
+                        //is this in the areaBox region?
+                        if (areaBox.PointExists(point))
                         {
+                            //output to user
                             Console.WriteLine(geoCode.results[0].formatted_address);
                         }
                     }
