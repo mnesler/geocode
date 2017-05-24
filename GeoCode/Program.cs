@@ -13,7 +13,7 @@ namespace GeoCode
         {
             try
             {   // Open the text file using a stream reader.
-                using (var sr = new StreamReader("TestData/input.txt"))
+                using (var sr = new StreamReader(args[0]))
                 {
                     string line;
                     var file = new List<string>();
