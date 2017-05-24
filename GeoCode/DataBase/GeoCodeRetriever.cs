@@ -6,7 +6,7 @@ namespace GeoCode.DataBase
 {
     public class GeoCodeRetriever
     {
-        HttpClient _client;
+        readonly HttpClient _client;
         public GeoCodeRetriever()
         {
             _client = new HttpClient();
