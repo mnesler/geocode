@@ -7,7 +7,7 @@ VS2015
 
 I tested as I coded with the input.txt file.
 
-At this time of this commit, there are no tests written.
+At this time of this commit, there are no tests written. I will write them soon.
 
 Assuming valid input,  I parsed the file to a collection of strings.
 
@@ -29,7 +29,7 @@ Note we assume some parameters as the number of verices is hardcoded to 4.
 If more vertices are to be passed, I would refactor this to an object that contains the number of vertices and the coordinate map for X and Y.  This would also be ideal for mocking test objects.
 
 I ripped the code from SO.
-//https://stackoverflow.com/questions/217578/how-can-i-determine-whether-a-2d-point-is-within-a-polygon
+//https://stackoverflow.com/questions/217578/how-can-i-determine-whether-a-2d-point-is-within-a-polygon, edited to fit C#; just the bool really.
 
 
 
