@@ -29,10 +29,8 @@ namespace GeoCode
                     Dictionary<string, Point> coordinateMap = GeoCoordinateParser.ParseCoordinatesToMap(file[0]);
                     var areaBox = new AreaBox(coordinateMap);
 
-                    var addressList = new List<string>();
                     for (int i = 1; i < file.Count; i++)
                     {
-                        addressList.Add(file[i]);
                         var geoCodeRetriver = new GeoCodeRetriever();
                         var geoCode = geoCodeRetriver.GeoCodeRetrieveAddress(file[i]);
 
